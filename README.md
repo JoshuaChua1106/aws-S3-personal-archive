@@ -1,6 +1,13 @@
 # Personal S3 Archive
 The personal S3 Archive project creates an AWS S3 bucket using Infrastructure as Code (IaC) via Terraform, which automatically moves files uploaded into the S3 bucket to Glacier Deep Archive.
 
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Cost Analysis](#cost-analysis)
+- [Implementation](#implementation)
+- [Bucket Features](#bucket-features)
+
 ## Introduction
 The AWS S3 Glacier Deep Archive is cheap and convenient way to store data in the cloud. 
 The bucket will utilized to store personal videos, files and photos that I do not need on a regular basis and can be archived.
@@ -47,4 +54,17 @@ The S3 bucket can be setup by running the following:
 ```terraform plan```
 
 ```terraform apply```
+
+## Bucket features
+### Versioning
+
+Versioning is enabled on the bucket to retain all previous versions of objects. This ensures historical data is preserved and prevents accidental overwrites or deletions.
+
+### Encryption
+
+Server-side encryption (AES256) is configured to automatically encrypt all files stored in the bucket, providing data security at rest.
+
+### Lifecycle Rules
+
+Lifecycle rules automatically transition both current and noncurrent object versions to Glacier Deep Archive, reducing storage costs for rarely accessed files.
 
