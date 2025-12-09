@@ -9,8 +9,8 @@ The personal S3 Archive project creates an AWS S3 bucket using Infrastructure as
 - [Bucket Features](#bucket-features)
 
 ## Introduction
-The AWS S3 Glacier Deep Archive is cheap and convenient way to store data in the cloud. 
-The bucket will utilized to store personal videos, files and photos that I do not need on a regular basis and can be archived.
+The AWS S3 Glacier Deep Archive is a cheap and convenient way to store data in the cloud. 
+The bucket will be utilized to store personal videos, files, and photos that I do not need on a regular basis and can be archived.
 
 This project will allow for the following:
 * A single storage location for archived data that can be accessed from many different locations
@@ -25,7 +25,7 @@ Based on the following:
 |AWS S3 (Glacier Deep Archive) | $0.036|
 
 ### Google One (Current)
-I am currently on the Google One plan, which costs $44.99 AUD annualy for 200gb of cloud storage.
+I am currently on the Google One plan, which costs $44.99 AUD annually for 200gb of cloud storage.
 Which equates to $0.22495 AUD per GB per year.
 
 **$0.22495 AUD per GB per year**
@@ -47,7 +47,7 @@ First ensure AWS CLI is configured correctly on the system.
 ```aws configure```
 
 ### Apply main.tf with Terraform
-The S3 bucket can be setup by running the following:
+The S3 bucket can be set up by running the following:
 
 ```terraform init```
 
